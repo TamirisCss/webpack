@@ -1,4 +1,4 @@
-# Webbpack 
+# Webpack 
 
 Udacity project:
 Evaluate a News Article with Natural Language Processing
