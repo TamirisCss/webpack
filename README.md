@@ -1,6 +1,6 @@
 # Webbpack 
 
-Udacity project
+Udacity project:
 Evaluate a News Article with Natural Language Processing
 
 ## Get Up and Running
