@@ -1,6 +1,7 @@
 # Webbpack 
 
-//TODO write about the project
+Udacity project
+Evaluate a News Article with Natural Language Processing
 
 ## Get Up and Running
 
