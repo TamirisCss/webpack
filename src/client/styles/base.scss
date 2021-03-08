@@ -1,3 +1,4 @@
+$base-color: #9DC29D;
 body {
     display: flex;
     flex-direction: column;
@@ -6,6 +7,13 @@ body {
 
 main {
     flex: 2;
+}
+
+.form-results {
+    li {
+        color: $base-color;
+    }
+
 }
 
 section {

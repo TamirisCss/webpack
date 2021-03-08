@@ -1,9 +1,6 @@
 var path = require('path')
 const express = require('express')
 const bodyParser = require('body-parser');
-//TODO apagar
-const mockAPIResponse = require('./mockAPI.js')
-const json = require('./mockAPI.js');
 
 const axios = require('axios');
 
@@ -27,10 +24,6 @@ app.get('/', function (req, res) {
 // designates what port the app will listen to for incoming requests
 app.listen(8081, function () {
     console.log('Example app listening on port 8081!')
-})
-
-app.get('/test', (req, res) => {
-    res.send(mockAPIResponse)
 })
 
 //add a app.post with an endpoint to check the topics of a text

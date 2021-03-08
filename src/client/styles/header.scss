@@ -1,5 +1,9 @@
+$base-color: #9DC29D;
+
 header {
+    background-color: $base-color;
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
+
 }
