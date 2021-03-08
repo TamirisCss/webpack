@@ -7,14 +7,25 @@ function handleSubmit(event) {
     Client.checkForName(formText)
 
     console.log("::: Form Submitted :::")
-    fetch('http://localhost:8081/test')
-    .then(res => {
+    //TODO call the new endpoint (POST) and send the fromText
+    fetch('http://localhost:8081/topics', 
+        {
+            method: 'POST',
+            headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            },
+            
+            body: JSON.stringify({text: formText})
+        })
+        .then(res => res.json())
+        .then(res => {
+            console.log(res)
+            document.getElementById('results').innxrHTML = res.message
 
-        return res.json()
-    })
-    .then(function(res) {
-        document.getElementById('results').innerHTML = res.message
-    })
+            //TODO read the result and add to HTML
+
+        })
 }
 
 export { handleSubmit }
