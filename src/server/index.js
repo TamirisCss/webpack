@@ -26,9 +26,9 @@ app.listen(8081, function () {
     console.log('Example app listening on port 8081!')
 })
 
-//add a app.post with an endpoint to check the topics of a text
-app.post('/topics', (req, res) => {
-    const url = encodeURI(`https://api.meaningcloud.com/topics-2.0?key=${process.env.API_KEY}&lang=en&txt=${req.body.text}&tt=a&uw=y`)
+//add a app.post with an endpoint to check the sentiment of a text
+app.post('/sentiment', (req, res) => {
+    const url = encodeURI(`https://api.meaningcloud.com/sentiment-2.1?key=${process.env.API_KEY}&of=json&url=${req.body.url}&lang=en`)
     axios.post(url)
         .then(response => res.send(response.data))    
 })

@@ -1,7 +1,15 @@
 # Webpack 
 
-Udacity project:
-Evaluate a News Article with Natural Language Processing
+## Udacity project
+
+Evaluate a News Article URL with Natural Language Processing using the [Maning Cloud API](https://www.meaningcloud.com/developer/sentiment-analysis/doc/2.1/what-is-sentiment-analysis), implemented using:  
+
+* HTML
+* CSS + SASS
+* Webpack
+* Babel
+* Jest
+
 
 ## Get Up and Running
 
